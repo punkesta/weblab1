@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Records</title>
+</head>
+<body>
+<h1>Test Records</h1>
+
+<form action="/records" method="post">
+    <input type="text" name="name" placeholder="Enter name" required>
+    <button type="submit">Хто натиснув, той підар</button>
+</form>
+
+<ul>
+    <li th:each="record : ${records}" th:text="${record.name}"></li>
+</ul>
+
+</body>
+</html>
