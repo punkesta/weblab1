@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class TestController {
-    private final TestRecordRepository repository;
+public class ItemController {
+    private final ItemRepository repository;
 
-    public TestController(TestRecordRepository repository) {
+    public ItemController(ItemRepository repository) {
         this.repository = repository;
     }
 
@@ -22,7 +22,7 @@ public class TestController {
 
     @PostMapping("/records")
     public String addTestRecord(@RequestParam String name) {
-        TestRecord student = new TestRecord();
+        Item student = new Item();
         student.setName(name);
         repository.save(student);
         return "redirect:/records";
