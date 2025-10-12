@@ -4,21 +4,101 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efab17f5-bbba-4eb9-8b4b-7cdedea4878b" name="Changes" comment="I sucked penis">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.3/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+    <list default="true" id="efab17f5-bbba-4eb9-8b4b-7cdedea4878b" name="Changes" comment="Added test item CRUD and page">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/architecture_diagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/business_doc.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/roadmap.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/JsonExt.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/admin/AdminUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/BaseItemEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/BaseItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/Collection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/InventoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/InventoryItemEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/InventoryItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/InventoryItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/ItemId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/Rarity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/SellService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/Weapon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/login/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/login/RegistrationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/security/systemuser/CustomUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/security/systemuser/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/security/systemuser/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/shop/ShopController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/shop/ShopService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/user/ProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/user/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/user/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/user/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/avatars/avatar_17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/avatars/avatar_18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/avatars/avatar_22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/avatars/avatar_23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/avatars/avatar_26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/avatars/avatar_default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/inventory/ak_redline.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/inventory/awp_dragon_lore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/inventory/default_case.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/inventory/m4_dead_space.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/inventory/sticker_navi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/inventory/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/profile/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/profile/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/shop/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/punksoft/weblab1/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/punksoft/weblab1/TestRecord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/punksoft/weblab1/TestRecordRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/punksoft/weblab1/Weblab1Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/records.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Weblab1Application.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/lab1/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/lab1/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/ItemDataSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/lab1/ItemDataSeeder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/lab1/ItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="repository" />
+    </option>
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -45,6 +125,16 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="com.intellij.jpb.JpaEntity" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -55,18 +145,22 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "punkesta"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;punkesta&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/punkesta/weblab1",
-    "accountId": "eb683064-9fb3-4737-9e64-bc0351163bfa"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/punkesta/weblab1&quot;,
+    &quot;accountId&quot;: &quot;eb683064-9fb3-4737-9e64-bc0351163bfa&quot;
   }
-}]]></component>
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -81,23 +175,45 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build weblab1.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
     "Gradle.weblab1 [bootJar].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Weblab1Application.executor": "Run",
     "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/yaroslav/IdeaProjects/weblab1/src/main/java/com/punksoft/weblab1/inventory",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/avatars" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1" />
+      <recent name="$PROJECT_DIR$/docs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/docs" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.punksoft.weblab1.inventory" />
+      <recent name="com.punksoft.weblab1.user" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradle bootJar" />
@@ -153,8 +269,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26199.169" />
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-IU-252.26199.169" />
       </set>
     </attachedChunks>
   </component>
@@ -167,7 +283,12 @@
       <updated>1757146490621</updated>
       <workItem from="1757146492066" duration="466000" />
       <workItem from="1757146968131" duration="88000" />
-      <workItem from="1757159700870" duration="182000" />
+      <workItem from="1757159700870" duration="416000" />
+      <workItem from="1758318022984" duration="3000" />
+      <workItem from="1759091788317" duration="51000" />
+      <workItem from="1760212815726" duration="3556000" />
+      <workItem from="1760268801721" duration="14483000" />
+      <workItem from="1760292428366" duration="12834000" />
     </task>
     <task id="LOCAL-00001" summary="I sucked penis">
       <option name="closed" value="true" />
@@ -185,7 +306,23 @@
       <option name="project" value="LOCAL" />
       <updated>1757159771886</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="I sucked penis 2">
+      <option name="closed" value="true" />
+      <created>1757160094200</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1757160094200</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added test item CRUD and page">
+      <option name="closed" value="true" />
+      <created>1760216121180</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760216121180</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +330,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="I sucked penis" />
-    <option name="LAST_COMMIT_MESSAGE" value="I sucked penis" />
+    <MESSAGE value="I sucked penis 2" />
+    <MESSAGE value="Added test item CRUD and page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test item CRUD and page" />
   </component>
 </project>

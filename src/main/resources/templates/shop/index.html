@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Shop</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #27ae60;
+            color: white;
+        }
+        img.icon {
+            width: 40px;
+            height: 40px;
+        }
+        button {
+            cursor: pointer;
+            background-color: #27ae60;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        button:hover {
+            background-color: #2ecc71;
+        }
+        .message {
+            text-align: center;
+            margin: 10px auto;
+            font-weight: bold;
+            color: green;
+        }
+        .error {
+            text-align: center;
+            margin: 10px auto;
+            font-weight: bold;
+            color: red;
+        }
+        .price-green {
+            color: green;
+            font-weight: bold;
+        }
+        .price-red {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h2 style="text-align:center;">Shop</h2>
+
+<h3 style="text-align:center;">You balance: <span th:text="${gold}">0.0</span>$</h3>
+
+<div th:if="${message}" class="message" th:text="${message}"></div>
+<div th:if="${error}" class="error" th:text="${error}"></div>
+
+<table>
+    <thead>
+    <tr>
+        <th>Icon</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Rarity</th>
+        <th>Price</th>
+        <th>Buy</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="item : ${items}">
+        <td>
+            <img th:src="@{'/inventory/' + ${item.iconPath}}" alt="Icon" class="icon"
+                 th:if="${item.iconPath != null}" />
+        </td>
+        <td th:text="${item.name}">Name</td>
+        <td th:text="${item.typeId}">Type</td>
+        <td th:text="${item.rarityId}">Rarity</td>
+
+        <td th:class="${item.price <= gold} ? 'price-green' : 'price-red'"
+            th:text="${item.price}">0.0</td>
+
+        <td>
+            <form th:action="@{/shop/buy}" method="post">
+                <input type="hidden" name="baseItemId" th:value="${item.id}" />
+                <button type="submit" th:disabled="${item.price > gold}">Buy</button>
+            </form>
+        </td>
+    </tr>
+    <tr th:if="${items.size() == 0}">
+        <td colspan="6" style="text-align:center;">No items.</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit Profile</title>
+</head>
+<body>
+<h1>Edit Profile</h1>
+
+<form th:action="@{/profile/edit}" method="post" th:object="${user}">
+    <label for="name">Name:</label>
+    <input type="text" th:field="*{name}" /><br/>
+
+    <label for="avatarPath">Select Avatar:</label><br/>
+    <div style="display: flex; gap: 15px;">
+        <div th:each="avatar : ${avatarFiles}">
+            <label>
+                <input type="radio" th:field="*{avatarPath}" th:value="${avatar}"/>
+                <img th:src="@{'/avatars/' + ${avatar}}" alt="avatar" style="width: 80px; height: 80px; border-radius: 50%;">
+            </label>
+        </div>
+    </div>
+    <label for="password">New Password:</label>
+    <input type="password" th:field="*{password}" /><br/>
+
+    <button type="submit">Save</button>
+</form>
+
+<a href="/profile">Back to Profile</a>
+</body>
+</html>
