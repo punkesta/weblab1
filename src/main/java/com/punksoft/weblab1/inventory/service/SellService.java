@@ -1,9 +1,10 @@
-package com.punksoft.weblab1.inventory;
+package com.punksoft.weblab1.inventory.service;
 
 import org.springframework.stereotype.Service;
 
 import jakarta.transaction.Transactional;
 
+import com.punksoft.weblab1.inventory.repo.InventoryItemRepository;
 import com.punksoft.weblab1.user.UserRepository;
 
 @Service

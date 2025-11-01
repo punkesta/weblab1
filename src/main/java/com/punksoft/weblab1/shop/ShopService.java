@@ -6,9 +6,9 @@ import java.util.List;
 
 import jakarta.transaction.Transactional;
 
-import com.punksoft.weblab1.inventory.BaseItemEntity;
-import com.punksoft.weblab1.inventory.BaseItemRepository;
-import com.punksoft.weblab1.inventory.InventoryItemService;
+import com.punksoft.weblab1.inventory.entity.BaseItemEntity;
+import com.punksoft.weblab1.inventory.repo.BaseItemRepository;
+import com.punksoft.weblab1.inventory.service.InventoryItemService;
 import com.punksoft.weblab1.user.UserRepository;
 
 @Service

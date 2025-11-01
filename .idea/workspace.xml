@@ -4,89 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efab17f5-bbba-4eb9-8b4b-7cdedea4878b" name="Changes" comment="Added test item CRUD and page">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/architecture_diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/business_doc.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/roadmap.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/JsonExt.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/admin/AdminUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/BaseItemEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/BaseItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/Collection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/InventoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/InventoryItemEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/InventoryItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/InventoryItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/ItemId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/Rarity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/SellService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/Weapon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/login/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/login/RegistrationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/security/systemuser/CustomUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/security/systemuser/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/security/systemuser/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/shop/ShopController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/shop/ShopService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/user/ProfileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/user/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/user/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/user/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/avatars/avatar_17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/avatars/avatar_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/avatars/avatar_22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/avatars/avatar_23.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/avatars/avatar_26.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/avatars/avatar_default.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/inventory/ak_redline.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/inventory/awp_dragon_lore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/inventory/default_case.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/inventory/m4_dead_space.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/inventory/sticker_navi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/inventory/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/profile/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/profile/view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/shop/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/users.html" afterDir="false" />
+    <list default="true" id="efab17f5-bbba-4eb9-8b4b-7cdedea4878b" name="Changes" comment="Added profile, inventory, shop and admin panel">
+      <change afterPath="$PROJECT_DIR$/docs/adr/0001-architecture-style.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/adr/0002-layered-architecture.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/api/openapi.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/api/swagger_screenshoot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/controller/InventoryRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/dto/InventoryItemDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/dto/ItemCreateDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/dto/ItemUpdateDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/mapper/InventoryItemMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/service/InventoryItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/punksoft/weblab1/inventory/service/InventoryItemServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/punksoft/weblab1/TestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/punksoft/weblab1/TestRecord.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/punksoft/weblab1/TestRecordRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/punksoft/weblab1/Weblab1Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/records.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Weblab1Application.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/lab1/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/lab1/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/ItemDataSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/lab1/ItemDataSeeder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/lab1/ItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/h2_database.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/h2_database.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/h2_database.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/h2_database.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/Weblab1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/Weblab1Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/BaseItemEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/entity/BaseItemEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/BaseItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/repo/BaseItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/controller/InventoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/InventoryItemEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/entity/InventoryItemEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/InventoryItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/repo/InventoryItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/InventoryItemService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/SellService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/service/SellService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/shop/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/shop/ShopService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,9 +72,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="com.intellij.jpb.JpaEntity" />
         <option value="Interface" />
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Object" />
         <option value="Class" />
       </list>
     </option>
@@ -172,32 +118,32 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build weblab1.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.weblab1 [bootJar].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.Weblab1Application.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/yaroslav/IdeaProjects/weblab1/src/main/java/com/punksoft/weblab1/inventory",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build weblab1.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.weblab1 [bootJar].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Weblab1Application.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yaroslav/IdeaProjects/weblab1/src/main/java/com/punksoft/weblab1/inventory&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory" />
@@ -206,10 +152,14 @@
       <recent name="$PROJECT_DIR$/docs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/api" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/controller" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/docs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.punksoft.weblab1.inventory.dto" />
+      <recent name="com.punksoft.weblab1.inventory.controller" />
       <recent name="com.punksoft.weblab1.inventory" />
       <recent name="com.punksoft.weblab1.user" />
     </key>
@@ -288,7 +238,13 @@
       <workItem from="1759091788317" duration="51000" />
       <workItem from="1760212815726" duration="3556000" />
       <workItem from="1760268801721" duration="14483000" />
-      <workItem from="1760292428366" duration="12834000" />
+      <workItem from="1760292428366" duration="13471000" />
+      <workItem from="1760740341345" duration="7000" />
+      <workItem from="1760780196176" duration="805000" />
+      <workItem from="1762005703218" duration="6029000" />
+      <workItem from="1762011768236" duration="4000" />
+      <workItem from="1762011777210" duration="1733000" />
+      <workItem from="1762013535003" duration="829000" />
     </task>
     <task id="LOCAL-00001" summary="I sucked penis">
       <option name="closed" value="true" />
@@ -332,6 +288,7 @@
     <MESSAGE value="I sucked penis" />
     <MESSAGE value="I sucked penis 2" />
     <MESSAGE value="Added test item CRUD and page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added test item CRUD and page" />
+    <MESSAGE value="Added profile, inventory, shop and admin panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added profile, inventory, shop and admin panel" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-package com.punksoft.weblab1.inventory;
+package com.punksoft.weblab1.inventory.entity;
 
 import org.hibernate.annotations.ColumnDefault;
 

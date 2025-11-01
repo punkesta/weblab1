@@ -1,4 +1,4 @@
-package com.punksoft.weblab1.inventory;
+package com.punksoft.weblab1.inventory.entity;
 
 import java.time.Instant;
 
@@ -8,11 +8,9 @@ import org.hibernate.annotations.OnDeleteAction;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
+@Builder
 @Getter
 @Setter
 @Entity
@@ -35,11 +33,13 @@ public class InventoryItemEntity {
     @JoinColumn(name = "BASE_ITEM_ID", nullable = false)
     private BaseItemEntity baseItem;
 
+    @Builder.Default
     @NotNull
     @ColumnDefault("FALSE")
     @Column(name = "IS_NEW", nullable = false)
     private Boolean isNew = false;
 
+    @Builder.Default
     @NotNull
     @ColumnDefault("FALSE")
     @Column(name = "IS_STAT_TRACK", nullable = false)

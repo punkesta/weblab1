@@ -1,0 +1,194 @@
+openapi: 3.0.0
+info:
+  title: Inventory API
+  description: API для управління ігровими предметами в інвентарі
+  version: 1.0.0
+servers:
+  - url: /api/inventory
+
+paths:
+  /:
+    post:
+      summary: Створення нового предмета
+      operationId: createInventoryItem
+      requestBody:
+        description: Дані для створення нового предмета
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ItemCreateDto'
+      responses:
+        '201':
+          description: Предмет створений успішно
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InventoryItemDto'
+        '400':
+          description: Невірні дані для створення предмета
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /{id}:
+    get:
+      summary: Отримати деталі предмета за ID
+      operationId: getInventoryItem
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Деталі предмета
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InventoryItemDto'
+        '404':
+          description: Предмет не знайдено
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+    put:
+      summary: Оновлення предмета
+      operationId: updateInventoryItem
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        description: Дані для оновлення предмета
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ItemUpdateDto'
+      responses:
+        '200':
+          description: Предмет успішно оновлено
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InventoryItemDto'
+        '400':
+          description: Невірні дані для оновлення предмета
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Предмет не знайдений
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+    patch:
+      summary: Часткове оновлення предмета
+      operationId: partialUpdateInventoryItem
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        description: Часткові дані для оновлення предмета
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ItemUpdateDto'
+      responses:
+        '200':
+          description: Предмет успішно частково оновлено
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InventoryItemDto'
+        '400':
+          description: Невірні дані для часткового оновлення
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Предмет не знайдений
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+    delete:
+      summary: Видалення предмета
+      operationId: deleteInventoryItem
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '204':
+          description: Предмет успішно видалений
+        '404':
+          description: Предмет не знайдений
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+components:
+  schemas:
+    InventoryItemDto:
+      type: object
+      properties:
+        id:
+          type: integer
+        ownerId:
+          type: integer
+        baseItemId:
+          type: string
+        isNew:
+          type: boolean
+        isStatTrack:
+          type: boolean
+        isEquippedCt:
+          type: boolean
+        isEquippedT:
+          type: boolean
+
+    ItemCreateDto:
+      type: object
+      properties:
+        ownerId:
+          type: integer
+        baseItemId:
+          type: string
+
+    ItemUpdateDto:
+      type: object
+      properties:
+        id:
+          type: integer
+        isEquippedCt:
+          type: boolean
+        isEquippedT:
+          type: boolean
+
+    ErrorResponse:
+      type: object
+      properties:
+        errorCode:
+          type: string
+        errorMessage:
+          type: string
