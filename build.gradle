@@ -7,9 +7,9 @@ plugins {
 	id 'io.freefair.lombok' version '8.10'
 }
 
-group = 'com.punksoft'
+group = 'com.noname'
 version = '0.0.3'
-description = 'weblab1'
+description = 'weblabs'
 
 java {
 	toolchain {
