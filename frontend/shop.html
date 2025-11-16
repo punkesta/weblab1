@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shop</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #27ae60;
+            color: white;
+        }
+        img.icon {
+            width: 40px;
+            height: 40px;
+        }
+        button {
+            cursor: pointer;
+            background-color: #27ae60;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        button:hover {
+            background-color: #2ecc71;
+        }
+        .message {
+            text-align: center;
+            margin: 10px auto;
+            font-weight: bold;
+            color: green;
+        }
+        .error {
+            text-align: center;
+            margin: 10px auto;
+            font-weight: bold;
+            color: red;
+        }
+        .price-green {
+            color: green;
+            font-weight: bold;
+        }
+        .price-red {
+            color: red;
+            font-weight: bold;
+        }
+        #banner {
+            background: #ffdddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: none;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<div id="banner">Service overloaded, try later</div>
+
+<h2 style="text-align:center;">Shop</h2>
+
+<h3 style="text-align:center;">You balance: <span id="gold">0.0</span>$</h3>
+
+<div id="message" class="message" style="display:none"></div>
+<div id="error" class="error" style="display:none"></div>
+
+<table id="item-table">
+    <thead>
+    <tr>
+        <th>Icon</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Rarity</th>
+        <th>Price</th>
+        <th>Buy</th>
+    </tr>
+    </thead>
+    <tbody id="item-table-body">
+    </tbody>
+</table>
+
+<script type="module" src="/src/shop.js"></script>
+</body>
+</html>

@@ -1,24 +1,42 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import { fetchWithResilience } from "./http.js";
+import { getOrCreateIdempotencyKey } from "./idempotency.js";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+const submitBtn = document.getElementById("submit");
+const result = document.getElementById("result");
+const banner = document.getElementById("banner");
 
-setupCounter(document.querySelector('#counter'))
+let failures = 0;
+const MAX_FAIL = 3;
+
+submitBtn.onclick = async () => {
+    const name = document.getElementById("name").value;
+
+    const payload = { name: name };
+    const idemKey = await getOrCreateIdempotencyKey(payload);
+
+    try {
+        const res = await fetchWithResilience("http://localhost:8080/orders/create", {
+            method: "POST",
+            body: JSON.stringify(payload),
+            idempotencyKey: idemKey,
+            retry: { retries: 3, baseDelayMs: 300, timeoutMs: 3500, jitter: true }
+        });
+
+        const data = await res.json();
+        result.innerText = JSON.stringify(data, null, 2);
+
+        failures = 0;
+        banner.style.display = "none";
+        submitBtn.disabled = false;
+
+    } catch (e) {
+        failures++;
+
+        if (failures >= MAX_FAIL) {
+            banner.style.display = "block";
+            submitBtn.disabled = true;
+        }
+
+        result.innerText = "Error: " + e.message;
+    }
+};

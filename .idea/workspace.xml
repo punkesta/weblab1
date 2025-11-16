@@ -4,61 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efab17f5-bbba-4eb9-8b4b-7cdedea4878b" name="Changes" comment="Added architecture/api docs; arch. layers; tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/health/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/health/HealthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/lab6/controller/OrderRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/lab6/dto/OrderDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/lab6/filter/FailImitationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/lab6/filter/RateLimitFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/lab6/filter/XRequestIdFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/lab6/service/IdempotencyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="efab17f5-bbba-4eb9-8b4b-7cdedea4878b" name="Changes" comment="Idempotency, request IDs, rate-filter, separate front-end">
+      <change afterPath="$PROJECT_DIR$/frontend/shop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/idempotency.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/shop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/security/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/shop/ShopBuyDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/shop/ShopRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/user/ProfileRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/h2_database.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/h2_database.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/h2_database.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/h2_database.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/JsonExt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/JsonExt.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/Weblab1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/WeblabsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/admin/AdminUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/admin/AdminUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/Collection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/ItemId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/ItemId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/Rarity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/Rarity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/Weapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/controller/InventoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/controller/InventoryRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/controller/InventoryRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/dto/InventoryItemDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/dto/InventoryItemDto.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/dto/ItemCreateDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/dto/ItemCreateDto.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/dto/ItemUpdateDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/dto/ItemUpdateDto.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/entity/BaseItemEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/entity/BaseItemEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/entity/InventoryItemEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/entity/InventoryItemEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/mapper/InventoryItemMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/mapper/InventoryItemMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/repo/BaseItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/repo/BaseItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/repo/InventoryItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/repo/InventoryItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/service/InventoryItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/service/InventoryItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory/service/SellService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/service/SellService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/lab1/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/lab1/ItemController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/lab1/ItemDataSeeder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/lab1/ItemRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/login/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/login/RegistrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/login/RegistrationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/security/systemuser/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/security/systemuser/CustomUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/security/systemuser/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/security/systemuser/CustomUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/security/systemuser/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/security/systemuser/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/shop/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/shop/ShopController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/shop/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/shop/ShopService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/user/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/user/ProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/user/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/user/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/user/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/punksoft/weblab1/Weblab1ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/noname/weblabs/WeblabsApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/punksoft/weblab1/inventory/service/InventoryItemServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/noname/weblabs/inventory/service/InventoryItemServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/counter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/javascript.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/security/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +110,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build weblab1.executor": "Run",
+    "Gradle.Build weblabs.executor": "Run",
     "Gradle.Download Sources.executor": "Run",
     "Gradle.weblab1 [bootJar].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -186,10 +149,11 @@
       <recent name="$PROJECT_DIR$/docs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.noname.weblabs.shop" />
+      <recent name="com.noname.weblabs.user" />
       <recent name="com.punksoft.weblab1.inventory.dto" />
       <recent name="com.punksoft.weblab1.inventory.controller" />
       <recent name="com.punksoft.weblab1.inventory" />
-      <recent name="com.punksoft.weblab1.user" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -248,7 +212,7 @@
       <workItem from="1762013535003" duration="980000" />
       <workItem from="1763298478114" duration="4513000" />
       <workItem from="1763303070752" duration="3805000" />
-      <workItem from="1763307183935" duration="18000" />
+      <workItem from="1763307183935" duration="7680000" />
     </task>
     <task id="LOCAL-00001" summary="I sucked penis">
       <option name="closed" value="true" />
@@ -290,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762014495399</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Idempotency, request IDs, rate-filter, separate front-end">
+      <option name="closed" value="true" />
+      <created>1763307416225</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1763307416225</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +274,7 @@
     <MESSAGE value="Added test item CRUD and page" />
     <MESSAGE value="Added profile, inventory, shop and admin panel" />
     <MESSAGE value="Added architecture/api docs; arch. layers; tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added architecture/api docs; arch. layers; tests" />
+    <MESSAGE value="Idempotency, request IDs, rate-filter, separate front-end" />
+    <option name="LAST_COMMIT_MESSAGE" value="Idempotency, request IDs, rate-filter, separate front-end" />
   </component>
 </project>

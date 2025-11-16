@@ -1,13 +1,27 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Orders Frontend</title>
+  <style>
+    #banner {
+      background: #ffdddd;
+      padding: 10px;
+      margin-bottom: 10px;
+      display: none;
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body>
+<h1>Create Order</h1>
+
+<div id="banner">Service overloaded, try later</div>
+
+<input id="name" placeholder="Order name"/>
+<button id="submit">Submit</button>
+
+<pre id="result"></pre>
+
+<script type="module" src="/src/main.js"></script>
+</body>
 </html>
