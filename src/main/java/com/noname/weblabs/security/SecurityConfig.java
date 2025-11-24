@@ -43,26 +43,26 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers(
-                                "/register",
-                                "/login",
-                                "/orders/**",
-
-                                // For idempotency-buy testing
-                                "/inventory/**", // to load static icons
-                                "/api/shop",
-                                "/api/shop/test-buy"
-                        ).permitAll()
-                        .requestMatchers("/admin/**").hasRole("ADMIN")
-                        .anyRequest().authenticated()
-                )
-                .formLogin(form -> form
-                        .loginPage("/login")
-                        .loginProcessingUrl("/login")
-                        .defaultSuccessUrl("/profile", true)
-                        .permitAll()
-                )
-                .logout(logout -> logout.permitAll());
+//                        .requestMatchers(
+//                                "/register",
+//                                "/login",
+//                                "/orders/**",
+//
+//                                // For idempotency-buy testing
+//                                "/inventory/**", // to load static icons
+//                                "/api/shop",
+//                                "/api/shop/test-buy"
+//                        ).permitAll()
+//                        .requestMatchers("/admin/**").hasRole("ADMIN")
+                        .anyRequest().permitAll()//authenticated()
+                );
+//                .formLogin(form -> form
+//                        .loginPage("/login")
+//                        .loginProcessingUrl("/login")
+//                        .defaultSuccessUrl("/profile", true)
+//                        .permitAll()
+//                )
+//                .logout(logout -> logout.permitAll());
 
         return http.build();
     }

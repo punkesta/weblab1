@@ -16,47 +16,47 @@ import lombok.*;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "INVENTORY")
+@Table(name = "inventory")
 public class InventoryItemEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID", nullable = false)
+    @Column(name = "id", nullable = false)
     private Integer id;
 
     @NotNull
-    @Column(name = "OWNER_ID", nullable = false)
+    @Column(name = "owner_id", nullable = false)
     private Integer ownerId;
 
     @NotNull
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @OnDelete(action = OnDeleteAction.RESTRICT)
-    @JoinColumn(name = "BASE_ITEM_ID", nullable = false)
+    @JoinColumn(name = "base_item_id", nullable = false)
     private BaseItemEntity baseItem;
 
     @Builder.Default
     @NotNull
-    @ColumnDefault("FALSE")
-    @Column(name = "IS_NEW", nullable = false)
+    @ColumnDefault("false")
+    @Column(name = "is_new", nullable = false)
     private Boolean isNew = false;
 
     @Builder.Default
     @NotNull
-    @ColumnDefault("FALSE")
-    @Column(name = "IS_STAT_TRACK", nullable = false)
+    @ColumnDefault("false")
+    @Column(name = "is_stat_track", nullable = false)
     private Boolean isStatTrack = false;
 
-    @ColumnDefault("LOCALTIMESTAMP")
-    @Column(name = "CREATED_AT")
+    @ColumnDefault("localtimestamp")
+    @Column(name = "created_at")
     private Instant createdAt;
 
-    @Column(name = "UPDATED_AT")
+    @Column(name = "updated_at")
     private Instant updatedAt;
 
-    @ColumnDefault("FALSE")
-    @Column(name = "IS_EQUIPPED_CT")
+    @ColumnDefault("false")
+    @Column(name = "is_equipped_ct")
     private Boolean isEquippedCt;
 
-    @ColumnDefault("FALSE")
-    @Column(name = "IS_EQUIPPED_T")
+    @ColumnDefault("false")
+    @Column(name = "is_equipped_t")
     private Boolean isEquippedT;
 }

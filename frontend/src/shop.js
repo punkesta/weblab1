@@ -1,5 +1,3 @@
-// Не функціонуватиме, бо сервер за замовчуванням перенаправляє на login
-
 import {getOrCreateIdempotencyKey} from "./idempotency.js";
 import {fetchWithResilience} from "./http.js";
 
@@ -8,10 +6,11 @@ const banner = document.getElementById("banner");
 const goldCounterView = document.getElementById('gold')
 
 let gold = 100000;
+const BASE_URL = 'http://localhost:8080'
 
 async function loadData() {
     try {
-        const shopRes = await fetch('http://localhost:8080/api/shop');
+        const shopRes = await fetch(`${BASE_URL}/api/shop`);
         const items = await shopRes.json();
 
         goldCounterView.textContent = gold.toString();
@@ -30,7 +29,7 @@ async function loadData() {
             const tr = document.createElement('tr');
 
             tr.innerHTML = `
-                <td>${item.iconPath ? `<img src="http://localhost:8080/inventory/${item.iconPath}" class="icon"/>` : ''}</td>
+                <td>${item.iconPath ? `<img src="${BASE_URL}/inventory/${item.iconPath}" class="icon"/>` : ''}</td>
                 <td>${item.name}</td>
                 <td>${item.typeId}</td>
                 <td>${item.rarityId}</td>
@@ -61,7 +60,7 @@ async function buyItem(item) {
         const payload = { baseItemId: item.id }
         const idemKey = await getOrCreateIdempotencyKey(payload);
 
-        const buyRes = await fetchWithResilience('http://localhost:8080/api/shop/test-buy', {
+        const buyRes = await fetchWithResilience(`${BASE_URL}/api/shop/test-buy`, {
             method: 'POST',
             idempotencyKey: idemKey,
             body: JSON.stringify(payload),
