@@ -14,8 +14,8 @@ import com.google.gson.Gson;
 
 import com.noname.weblabs.health.ErrorResponse;
 
-//@Order(3)
-//@Component
+@Order(3)
+@Component
 public class FailImitationFilter implements Filter {
     private final Random random = new Random();
 

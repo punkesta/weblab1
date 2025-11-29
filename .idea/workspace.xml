@@ -4,26 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efab17f5-bbba-4eb9-8b4b-7cdedea4878b" name="Changes" comment="Idempotency, request IDs, rate-filter, separate front-end">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
+    <list default="true" id="efab17f5-bbba-4eb9-8b4b-7cdedea4878b" name="Changes" comment="Docker compose">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application-test.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/h2_database.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/h2_database.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/h2_database.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/h2_database.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/shop.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/entity/BaseItemEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/entity/BaseItemEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/entity/InventoryItemEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/inventory/entity/InventoryItemEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/login/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/security/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/security/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/lab6/filter/FailImitationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/lab6/filter/FailImitationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/user/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/noname/weblabs/WeblabsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/noname/weblabs/WeblabsApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/noname/weblabs/inventory/service/InventoryItemServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/noname/weblabs/inventory/service/InventoryItemServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +105,7 @@
   "keyToString": {
     "Docker.Dockerfile.executor": "Run",
     "Docker.docker-compose.yml.api: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.app: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.db: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.frontend: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
@@ -122,6 +113,8 @@
     "Gradle.Build weblab1.executor": "Run",
     "Gradle.Build weblabs.executor": "Run",
     "Gradle.Download Sources.executor": "Run",
+    "Gradle.InventoryItemServiceTest.executor": "Run",
+    "Gradle.InventoryItemServiceTest.testUpdateItem_notFound.executor": "Run",
     "Gradle.weblab1 [bootJar].executor": "Run",
     "Gradle.weblabs [bootJar].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -178,7 +171,55 @@
       <command value="gradle bootJar" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Gradle.InventoryItemServiceTest">
+    <configuration name="InventoryItemServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.noname.weblabs.inventory.service.InventoryItemServiceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="InventoryItemServiceTest.testUpdateItem_notFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.noname.weblabs.inventory.service.InventoryItemServiceTest.testUpdateItem_notFound&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="weblab1.main" />
       <method v="2">
@@ -197,8 +238,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker Desktop">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
@@ -215,12 +267,33 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.app: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker Desktop">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="app" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="Docker.docker-compose.yml.app: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Gradle.InventoryItemServiceTest" />
+      <item itemvalue="Gradle.InventoryItemServiceTest.testUpdateItem_notFound" />
       <item itemvalue="Spring Boot.WeblabsApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.InventoryItemServiceTest" />
+        <item itemvalue="Gradle.InventoryItemServiceTest.testUpdateItem_notFound" />
+        <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="Docker.docker-compose.yml.app: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -264,7 +337,9 @@
       <workItem from="1763995275174" duration="6413000" />
       <workItem from="1764001736775" duration="2897000" />
       <workItem from="1764004964332" duration="133000" />
-      <workItem from="1764005238580" duration="6081000" />
+      <workItem from="1764005238580" duration="6667000" />
+      <workItem from="1764367180814" duration="40000" />
+      <workItem from="1764415912113" duration="3693000" />
     </task>
     <task id="LOCAL-00001" summary="I sucked penis">
       <option name="closed" value="true" />
@@ -322,7 +397,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763316807052</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Docker compose">
+      <option name="closed" value="true" />
+      <created>1764011452004</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1764011452004</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +421,8 @@
     <MESSAGE value="Added profile, inventory, shop and admin panel" />
     <MESSAGE value="Added architecture/api docs; arch. layers; tests" />
     <MESSAGE value="Idempotency, request IDs, rate-filter, separate front-end" />
-    <option name="LAST_COMMIT_MESSAGE" value="Idempotency, request IDs, rate-filter, separate front-end" />
+    <MESSAGE value="Docker compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docker compose" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -14,6 +15,7 @@ import com.noname.weblabs.inventory.entity.InventoryItemEntity;
 import com.noname.weblabs.inventory.repo.BaseItemRepository;
 import com.noname.weblabs.inventory.repo.InventoryItemRepository;
 
+@ActiveProfiles("test")
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
 public class InventoryItemServiceTest {

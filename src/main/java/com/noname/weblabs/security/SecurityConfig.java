@@ -55,13 +55,13 @@ public class SecurityConfig {
 //                        ).permitAll()
 //                        .requestMatchers("/admin/**").hasRole("ADMIN")
                         .anyRequest().permitAll()//authenticated()
+                )
+                .formLogin(form -> form
+                        .loginPage("/login")
+                        .loginProcessingUrl("/login")
+                        .defaultSuccessUrl("/profile", true)
+                        .permitAll()
                 );
-//                .formLogin(form -> form
-//                        .loginPage("/login")
-//                        .loginProcessingUrl("/login")
-//                        .defaultSuccessUrl("/profile", true)
-//                        .permitAll()
-//                )
 //                .logout(logout -> logout.permitAll());
 
         return http.build();
