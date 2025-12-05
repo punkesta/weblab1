@@ -2,7 +2,7 @@
 
 - CI: автоматична збірка та тести через GitHub Actions
 - CI Status
-  ![Status SVG](https://github.com/<твій_юзер>/weblab1/actions/workflows/ci.yml/badge.svg)
+  ![Status SVG](https://github.com/punkesta/weblab1/actions/workflows/ci.yml/badge.svg)
 
 - CD: Docker image публікується у GitHub Container Registry при створенні тега v*, наприклад `v1.0.0`.
 
