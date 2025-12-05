@@ -70,7 +70,7 @@ public class InventoryItemServiceTest {
 
         assertNotNull(updatedItem);
         assertEquals(isEquippedCt, updatedItem.getIsEquippedCt());
-        assertEquals(isEquippedT, updatedItem.getIsEquippedCt());
+        assertEquals(isEquippedT, updatedItem.getIsEquippedT());
     }
 
     @Test

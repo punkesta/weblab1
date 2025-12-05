@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efab17f5-bbba-4eb9-8b4b-7cdedea4878b" name="Changes" comment="Docker compose">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application-test.yml" afterDir="false" />
+    <list default="true" id="efab17f5-bbba-4eb9-8b4b-7cdedea4878b" name="Changes" comment="Minor fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/h2_database.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/h2_database.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/h2_database.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/h2_database.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/lab6/filter/FailImitationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/lab6/filter/FailImitationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/noname/weblabs/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/noname/weblabs/WeblabsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/noname/weblabs/WeblabsApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/noname/weblabs/inventory/service/InventoryItemServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/noname/weblabs/inventory/service/InventoryItemServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,50 +93,50 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.Dockerfile.executor": "Run",
-    "Docker.docker-compose.yml.api: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.app: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.db: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.frontend: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "Docker.frontend/Dockerfile.executor": "Run",
-    "Gradle.Build weblab1.executor": "Run",
-    "Gradle.Build weblabs.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.InventoryItemServiceTest.executor": "Run",
-    "Gradle.InventoryItemServiceTest.testUpdateItem_notFound.executor": "Run",
-    "Gradle.weblab1 [bootJar].executor": "Run",
-    "Gradle.weblabs [bootJar].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.Weblab1Application.executor": "Run",
-    "Spring Boot.WeblabsApplication.executor": "Run",
-    "database.data.extractors.current.export.id": "SQL Inserts",
-    "database.data.extractors.current.id": "SQL Inserts",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/yaroslav/IdeaProjects/weblabs",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.api: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.app: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.db: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.frontend: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.frontend/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build weblab1.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build weblabs.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.InventoryItemServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.InventoryItemServiceTest.testUpdateItem_notFound.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.weblab1 [bootJar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.weblabs [bootJar].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Weblab1Application.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.WeblabsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL Inserts&quot;,
+    &quot;database.data.extractors.current.id&quot;: &quot;SQL Inserts&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yaroslav/IdeaProjects/weblabs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/punksoft/weblab1/inventory" />
@@ -220,6 +212,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="WeblabsApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.noname.weblabs.WeblabsApplicationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="weblab1.main" />
       <method v="2">
@@ -259,14 +275,6 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker Desktop">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration name="docker-compose.yml.app: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker Desktop">
       <deployment type="docker-compose.yml">
         <settings>
@@ -283,7 +291,7 @@
     <list>
       <item itemvalue="Docker.Dockerfile" />
       <item itemvalue="Docker.docker-compose.yml.app: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Gradle.WeblabsApplicationTests" />
       <item itemvalue="Gradle.InventoryItemServiceTest" />
       <item itemvalue="Gradle.InventoryItemServiceTest.testUpdateItem_notFound" />
       <item itemvalue="Spring Boot.WeblabsApplication" />
@@ -291,10 +299,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.InventoryItemServiceTest" />
+        <item itemvalue="Gradle.WeblabsApplicationTests" />
         <item itemvalue="Gradle.InventoryItemServiceTest.testUpdateItem_notFound" />
         <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Docker.docker-compose.yml.app: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -339,7 +347,8 @@
       <workItem from="1764004964332" duration="133000" />
       <workItem from="1764005238580" duration="6667000" />
       <workItem from="1764367180814" duration="40000" />
-      <workItem from="1764415912113" duration="3693000" />
+      <workItem from="1764415912113" duration="3749000" />
+      <workItem from="1764547255482" duration="14000" />
     </task>
     <task id="LOCAL-00001" summary="I sucked penis">
       <option name="closed" value="true" />
@@ -405,7 +414,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764011452004</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Minor fixes">
+      <option name="closed" value="true" />
+      <created>1764419785402</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1764419785402</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,7 +439,8 @@
     <MESSAGE value="Added architecture/api docs; arch. layers; tests" />
     <MESSAGE value="Idempotency, request IDs, rate-filter, separate front-end" />
     <MESSAGE value="Docker compose" />
-    <option name="LAST_COMMIT_MESSAGE" value="Docker compose" />
+    <MESSAGE value="Minor fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor fixes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
